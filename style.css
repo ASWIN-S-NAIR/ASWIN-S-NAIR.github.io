@@ -198,6 +198,10 @@ section:nth-child(even) { background: var(--bg2); }
   display: flex; align-items: center; justify-content: center;
 }
 .avatar-inner i { font-size: 4rem; color: var(--primary); }
+.avatar-photo {
+  width: 100%; height: 100%; border-radius: 50%;
+  object-fit: cover; display: block;
+}
 .avatar-badge {
   background: var(--card); border: 1px solid var(--border);
   border-radius: 50px; padding: 6px 16px;
