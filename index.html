@@ -68,20 +68,6 @@
           <span class="stat-label">Languages</span>
         </div>
       </div>
-      <div class="hero-social">
-        <a href="https://www.linkedin.com/in/aswin-s-nair-564b3b111?originalSubdomain=ae" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.facebook.com/share/14e7TPBYgXa/" target="_blank" rel="noopener noreferrer" title="Facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/asnmap93?igsh=ZGh3d2Jndzl5Znhq" target="_blank" rel="noopener noreferrer" title="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://wa.me/971507035173" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
     </div>
     <div class="hero-scroll">
       <span>Scroll Down</span>
@@ -99,7 +85,7 @@
       <div class="about-grid">
         <div class="about-avatar">
           <div class="avatar-ring">
-            <img src="profile.jpg" alt="Aswin S Nair" class="avatar-photo">
+            <img src="436163.jpg" alt="Aswin S Nair" class="avatar-photo">
           </div>
           <div class="avatar-badge">
             <i class="fas fa-wrench"></i>
@@ -161,14 +147,67 @@
           <div class="skill-icon"><i class="fas fa-print"></i></div>
           <h3>Printing Solutions</h3>
           <p>Color &amp; Mono A3/A4 Multifunction Printers (MFP), HP PageWide, Digital Copiers across all major brands.</p>
-          <div class="skill-tags">
-            <span>Canon iR-ADV C3320/3330/5235/5535/5540/5550/5560</span>
-            <span>Konica Minolta Bizhub C554/360i/C250i/C300i/C450i</span>
-            <span>Kyocera TASKalfa 2200dn/3212i/4012i</span>
-            <span>Triumph Adler 2507ci/3207ci/3507ci</span>
-            <span>HP PageWide Enterprise Color 556/586</span>
-            <span>Toshiba e.Studio 2515AC/3015AC/3515AC</span>
-            <span>Samsung ProXpress M4070FR/2200dn</span>
+          <div class="skill-tags" id="printer-brands">
+            <div class="brand-item">
+              <button class="brand-btn" onclick="toggleBrand(this)">Canon <i class="fas fa-chevron-down"></i></button>
+              <div class="brand-models" style="display:none;">
+                <span>iR-ADV C3320</span>
+                <span>iR-ADV C3330</span>
+                <span>iR-ADV C5235</span>
+                <span>iR-ADV C5535</span>
+                <span>iR-ADV C5540</span>
+                <span>iR-ADV C5550</span>
+                <span>iR-ADV C5560</span>
+              </div>
+            </div>
+            <div class="brand-item">
+              <button class="brand-btn" onclick="toggleBrand(this)">Konica Minolta <i class="fas fa-chevron-down"></i></button>
+              <div class="brand-models" style="display:none;">
+                <span>Bizhub C554</span>
+                <span>Bizhub 360i</span>
+                <span>Bizhub C250i</span>
+                <span>Bizhub C300i</span>
+                <span>Bizhub C450i</span>
+              </div>
+            </div>
+            <div class="brand-item">
+              <button class="brand-btn" onclick="toggleBrand(this)">Kyocera <i class="fas fa-chevron-down"></i></button>
+              <div class="brand-models" style="display:none;">
+                <span>TASKalfa 2200dn</span>
+                <span>TASKalfa 3212i</span>
+                <span>TASKalfa 4012i</span>
+              </div>
+            </div>
+            <div class="brand-item">
+              <button class="brand-btn" onclick="toggleBrand(this)">Triumph Adler <i class="fas fa-chevron-down"></i></button>
+              <div class="brand-models" style="display:none;">
+                <span>2507ci</span>
+                <span>3207ci</span>
+                <span>3507ci</span>
+              </div>
+            </div>
+            <div class="brand-item">
+              <button class="brand-btn" onclick="toggleBrand(this)">HP PageWide <i class="fas fa-chevron-down"></i></button>
+              <div class="brand-models" style="display:none;">
+                <span>Enterprise Color 556</span>
+                <span>Enterprise Color 586</span>
+              </div>
+            </div>
+            <div class="brand-item">
+              <button class="brand-btn" onclick="toggleBrand(this)">Toshiba <i class="fas fa-chevron-down"></i></button>
+              <div class="brand-models" style="display:none;">
+                <span>e.Studio 2515AC</span>
+                <span>e.Studio 3015AC</span>
+                <span>e.Studio 3515AC</span>
+              </div>
+            </div>
+            <div class="brand-item">
+              <button class="brand-btn" onclick="toggleBrand(this)">Samsung <i class="fas fa-chevron-down"></i></button>
+              <div class="brand-models" style="display:none;">
+                <span>ProXpress M4070FR</span>
+                <span>ProXpress 2200dn</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -232,10 +271,6 @@
             <span>VS Code</span>
             <span>GitHub</span>
             <span>Adobe Photoshop</span>
-            <span>Qube ERP</span>
-            <span>AnyDesk / TeamViewer / UltraViewer</span>
-            <span>TCP/IP Networking</span>
-            <span>Service Diagnostic Tools</span>
           </div>
         </div>
 
@@ -371,22 +406,6 @@
       <div class="edu-grid">
 
         <div class="edu-card">
-          <div class="edu-icon"><i class="fas fa-book"></i></div>
-          <div class="edu-content">
-            <h3>High School</h3>
-            <p class="edu-year">2010</p>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
-          <div class="edu-content">
-            <h3>Higher Secondary – Computer Science</h3>
-            <p class="edu-year">2010 – 2012</p>
-          </div>
-        </div>
-
-        <div class="edu-card">
           <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
           <div class="edu-content">
             <h3>Bachelor of Arts (Sociology)</h3>
@@ -473,32 +492,12 @@
             <span class="contact-label">Location</span>
             <span class="contact-value">Dubai, UAE</span>
           </div>
-        </div>      </div>
-      <div class="contact-social">
-        <h3 class="social-title">Connect With Me</h3>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/aswin-s-nair-564b3b111?originalSubdomain=ae" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://www.facebook.com/share/14e7TPBYgXa/" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook">
-            <i class="fab fa-facebook"></i>
-            <span>Facebook</span>
-          </a>
-          <a href="https://www.instagram.com/asnmap93?igsh=ZGh3d2Jndzl5Znhq" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
-          </a>
-          <a href="https://wa.me/971507035173" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-            <span>WhatsApp</span>
-          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER =====" -->
+  <!-- ===== FOOTER ===== -->
   <footer>
     <div class="footer-inner">
       <p class="footer-name">Aswin S Nair</p>

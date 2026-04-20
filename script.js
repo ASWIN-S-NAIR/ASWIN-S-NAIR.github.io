@@ -63,3 +63,28 @@ revealElements.forEach(el => observer.observe(el));
 document.querySelector('.hero-scroll')?.addEventListener('click', () => {
   document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
 });
+
+
+// ===== EXPANDABLE BRAND ITEMS =====
+function toggleBrand(button) {
+  const brandItem = button.parentElement;
+  const brandModels = brandItem.querySelector('.brand-models');
+  const isExpanded = button.classList.contains('expanded');
+  
+  // Close all other expanded items
+  document.querySelectorAll('.brand-btn.expanded').forEach(btn => {
+    if (btn !== button) {
+      btn.classList.remove('expanded');
+      btn.parentElement.querySelector('.brand-models').style.display = 'none';
+    }
+  });
+  
+  // Toggle current item
+  if (isExpanded) {
+    button.classList.remove('expanded');
+    brandModels.style.display = 'none';
+  } else {
+    button.classList.add('expanded');
+    brandModels.style.display = 'grid';
+  }
+}
