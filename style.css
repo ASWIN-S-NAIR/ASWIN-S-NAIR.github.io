@@ -164,6 +164,27 @@ img { max-width: 100%; }
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(6px); }
 }
+.hero-social {
+  display: flex; gap: 1.2rem; justify-content: center;
+  margin-top: 2rem;
+}
+.hero-social a {
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(14, 165, 233, 0.12);
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 1.2rem;
+  transition: all var(--transition);
+}
+.hero-social a:hover {
+  background: var(--gradient);
+  border-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3);
+}
 
 /* ===== SECTIONS ===== */
 section { padding: 90px 2rem; }
